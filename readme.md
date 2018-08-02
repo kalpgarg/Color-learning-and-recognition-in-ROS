@@ -77,23 +77,34 @@ catkin_create_pkg should have following dependencies: sensor_msgs cv_bridge rosc
 Now create a .cpp file. Code link: http://wiki.ros.org/cv_bridge/Tutorials/UsingCvBridgeToConvertBetweenROSImagesAndOpenCVImages
 
 STEP 3: 
+
 Run the node using rosrun command. gscam node should already be running. 
 
 ## Follow below steps for using this repository:
 
 STEP 1:
+
 Create a new ROS package named as rqt_image_view under new catkin workspace. 
+
 Tutorial for creating catkin workspace: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+
 Tutorial for creating ROS package under catkin workspace: http://wiki.ros.org/catkin/Tutorials/CreatingPackage
+
 Don't put any dependencies while creating ROS package.
+
 Completely merge rqt_image_view folder in this repository with your newly created ROS package. Overwrite files if necessary. 
 
 STEP 2: 
+
 Build your catkin_workspace using $ catkin_make.
+
 Source your environment using $ source devel/setup.bash in your catkin_workspace.
 
 STEP 3:
+
 Run $ roscore in separate terminal.
+
 Use $ rosrun rqt_image_view rqt_image_view and a GUI will appear.
+
 If you have already started publishing your webcam image messages in a separate terminal, then subscribe to them in GUI and then you will see your video stream. 
 

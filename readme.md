@@ -70,7 +70,7 @@ $ curl -s "https://raw.githubusercontent.com/arthurbeggs/scripts/master/install_
 
 STEP 2:
 
-Create a new catkin_pkg inside a catkin workspace.
+Create a new catkin_pkg inside a catkin workspace. 
 
 catkin_create_pkg should have following dependencies: sensor_msgs cv_bridge roscpp std_msgs image_transport
 
@@ -82,11 +82,15 @@ Run the node using rosrun command. gscam node should already be running.
 ## Follow below steps for using this repository:
 
 STEP 1:
-Create a new ROS package named as rqt_image_view under new catkin workspace.
+Create a new ROS package named as rqt_image_view under new catkin workspace. 
+Tutorial for creating catkin workspace: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+Tutorial for creating ROS package under catkin workspace: http://wiki.ros.org/catkin/Tutorials/CreatingPackage
+Don't put any dependencies while creating ROS package.
+Completely merge rqt_image_view folder in this repository with your newly created ROS package. Overwrite files if necessary. 
 
 STEP 2: 
 Build your catkin_workspace using $ catkin_make.
-Source your environment using $ source devel/setup.bash in your catkin_worksapce.
+Source your environment using $ source devel/setup.bash in your catkin_workspace.
 
 STEP 3:
 Run $ roscore in separate terminal.
